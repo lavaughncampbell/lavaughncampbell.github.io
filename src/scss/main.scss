@@ -1,0 +1,104 @@
+avatar {
+  border-radius: 50%;
+  float: left;
+  margin-right: 1em;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+header {
+  position: relative;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  padding: 0 .5rm 0 1em;
+}
+
+header .logo{
+  line-height: 50px;
+  font-weight: bold;
+}
+
+nav {
+  position: absolute;
+  display: none;
+  background: #000;
+  float: right;
+  top: 50px;
+  left: 0;
+  right: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li{
+  display: inline;
+}
+
+nav ul li a,
+nav ul li a:link,
+nav ul li a:visited{
+  display: block;
+  border-bottom: 1px solic #777;
+  padding: 0 .5em;
+  color: #fff;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  background: #444;
+}
+Main Content (set a landmark)
+Add a main element and center the page content.
+
+<main>
+  <h1>Hello,...
+</main>
+main {
+  /* Use a margin to center the page */
+  margin: 0 auto;
+
+  /* Set the width of the content */
+  width: 960px;
+
+  /* For samller screens to not exceed the max screen width */
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 960px)  {
+    main {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 960px)  {
+    nav {
+        nav {
+            display:none;
+        }
+    }
+
+    #toggleMenu {
+    display: none;
+  }
+
+  @media only screen and (max-width: 960px)  {
+
+    #toggleMenu {
+      display: block;
+      float: right;
+      line-height: 50px;
+    }
